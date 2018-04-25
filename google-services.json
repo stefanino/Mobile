@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "782127478971",
+    "firebase_url": "https://spin-up-2-0.firebaseio.com",
+    "project_id": "spin-up-2-0",
+    "storage_bucket": "spin-up-2-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782127478971:android:cef443c44ff28573",
+        "android_client_info": {
+          "package_name": "com.example.stefano.spinup20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782127478971-ae3t8q1obnch2ssu621ssjgt1jhcn97r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcWpW9We41zXDXHsM_MMi4c9t13gl7ZXA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

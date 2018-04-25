@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stefano.spinup20.SearchApp"
+    android:background="@drawable/spin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/searchAppName"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter app name"
+            android:textColorHint="@android:color/black"
+            android:layout_margin="15dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+
+            />
+
+        <Spinner
+            android:id="@+id/searchAppCategory"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:layout_margin="15dp"
+            android:textAlignment="center"
+            android:entries="@array/app_category_search">
+        </Spinner>
+
+        <Button
+            android:id="@+id/searchApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:text="Search !"
+            android:layout_margin="15dp"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+</ScrollView> -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/startBlue"
+    tools:context="com.example.stefano.spinup20.SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search app !"
+            android:textAllCaps="true"
+            android:textColor="@color/grayLight"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/trans_rectangle"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="150dp">
+
+        <EditText
+            android:id="@+id/searchAppName"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:hint="Enter app name"
+            android:background="@drawable/rounded_white"
+            android:paddingLeft="5dp"
+            />
+
+        <Spinner
+            android:id="@+id/searchAppCategory"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_white"
+            android:paddingLeft="5dp"
+            android:entries="@array/app_category_search"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/searchApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:text="Search !"
+            android:background="@drawable/rounded_white"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

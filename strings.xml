@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Spin Up</string>
+
+    <string-array name="app_category">
+        <item>Books</item>
+        <item>Family</item>
+        <item>Food and Drink</item>
+        <item>Games</item>
+        <item>Health</item>
+        <item>Lifestyle</item>
+        <item>Music</item>
+        <item>Sport</item>
+        <item>Weather</item>
+    </string-array>
+
+    <string-array name="app_category_search">
+        <item>-</item>
+        <item>Books</item>
+        <item>Family</item>
+        <item>Food and Drink</item>
+        <item>Games</item>
+        <item>Health</item>
+        <item>Lifestyle</item>
+        <item>Music</item>
+        <item>Sport</item>
+        <item>Weather</item>
+    </string-array>
+
+    <string-array name="rate">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context="com.example.stefano.spinup20.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter in our community !"
+            android:textAllCaps="true"
+            android:textColor="@color/grayLight"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/trans_rectangle"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="150dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_white"
+            android:hint="Enter your username"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_white"
+            android:hint="Enter your e-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_white"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"/>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_white"
+            android:text="Sign Up" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stefano.spinup20.AppHome"
+    android:background="@drawable/spin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/listDeveloperTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_gravity="right"
+            android:layout_marginTop="-70dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/numberFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/rateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"/>
+
+        <Spinner
+            android:id="@+id/rateSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_margin="15dp"
+            android:textAlignment="center"
+            android:entries="@array/rate">
+        </Spinner>
+
+        <Button
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:text="Rate"
+            android:layout_margin="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"/>
+
+            <EditText
+                android:id="@+id/insertComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Insert your comment"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:layout_gravity="center"
+                android:background="@android:color/white"/>
+
+            <Button
+                android:id="@+id/postComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:text="Post Comment"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView> -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.stefano.spinup20.AppHome"
+        android:background="@color/grayLight"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical"
+                android:background="@drawable/gradient_background">
+
+                <TextView
+                    android:id="@+id/appNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/listDeveloperTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <Button
+                    android:id="@+id/follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow"
+                    android:textColor="#4bb6ef"
+                    android:background="@drawable/button_style_follow"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <Spinner
+                    android:id="@+id/rateSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-85dp"
+                    android:layout_marginLeft="280dp"
+                    android:textAlignment="center"
+                    android:entries="@array/rate">
+                </Spinner>
+
+                <Button
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate App !"
+                    android:textColor="#4bb6ef"
+                    android:background="@drawable/button_style_follow"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="250dp"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="340dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/follower_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Follower"
+                            android:textSize="14sp"
+                            android:background="@android:color/transparent" />
+
+                        <TextView
+                            android:id="@+id/numberFollow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/startBlue"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/rate_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rate"
+                            android:textSize="14sp"
+                            android:background="@android:color/transparent" />
+
+                        <TextView
+                            android:id="@+id/rateValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/startBlue"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/myRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"/>
+
+                <EditText
+                    android:id="@+id/insertComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Enter your comment"
+                    />
+
+                <Button
+                    android:id="@+id/postComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:text="Post Comment"
+                    android:textColor="#fff"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/editTextComment"/>
+
+
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>

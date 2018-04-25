@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- QUELLO DI YOUTUBE BLU
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graylight"
+    tools:context="com.example.stefano.spinup20.MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="405dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/gradientbackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome"
+                android:layout_marginTop="35dp"
+                android:text="Welcome To Spin Up"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:fontFamily="casual"
+                android:textStyle="bold"/>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="Share Your App"
+                    android:gravity="top|center_horizontal"
+                    android:textSize="36dp"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="Get a Feedback"
+                    android:gravity="top|center_horizontal"
+                    android:textSize="36dp"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="Vote and Comment"
+                    android:gravity="top|center_horizontal"
+                    android:textSize="36dp"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="Cooperate"
+                    android:gravity="top|center_horizontal"
+                    android:textSize="36dp"
+                    android:textColor="@android:color/black"
+                    />
+            </ViewFlipper>
+            
+        </LinearLayout>
+        
+        <android.support.v7.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="275dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/sign_in"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@android:color/white"
+                        android:text="Sign in" />
+
+                    <Button
+                        android:id="@+id/sign_up"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@android:color/white"
+                        android:text="Sign up" />
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/google"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stefano.spinup20.MainActivity"
+    android:background="@drawable/background_main"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Welcome To Spin Up"
+        android:textAllCaps="true"
+        android:textColor="#F2F2F2"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="175dp"
+            android:autoStart="true"
+            android:flipInterval="2000"
+            android:inAnimation="@android:anim/fade_in"
+            android:outAnimation="@android:anim/fade_out">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Share Your App"
+                android:gravity="top|center_horizontal"
+                android:textSize="36dp"
+                android:textColor="#FBFBEF"
+                />
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Get a Feedback"
+                android:gravity="top|center_horizontal"
+                android:textSize="36dp"
+                android:textColor="#FBFBEF"
+                />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Vote and Comment"
+                android:gravity="top|center_horizontal"
+                android:textSize="36dp"
+                android:textColor="#FBFBEF"
+                />
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Cooperate"
+                android:gravity="top|center_horizontal"
+                android:textSize="36dp"
+                android:textColor="#FBFBEF"
+                />
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/white"
+            android:text="Sign in"
+            />
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/white"
+            android:text="Sign up" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

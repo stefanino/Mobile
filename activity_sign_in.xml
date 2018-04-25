@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context="com.example.stefano.spinup20.SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/trans_rectangle"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="150dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:hint="Enter your e-mail"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_white"
+            android:paddingLeft="5dp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_white"
+            android:paddingLeft="5dp"
+            />
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:text="Sign In"
+            android:background="@drawable/rounded_white"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
